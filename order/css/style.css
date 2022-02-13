@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+
+.navbar {
+    width: 100% !important;
+    box-shadow: 0 0 15px black;
+}
+
+.phone {
+    color: black !important;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+}
+
+.brand-text {
+    font-size: 24px;
+    text-transform: none;
+}
+
+.navbar-nav {
+    margin-left: 400px !important;
+}
+
+.header {
+    display: flex !important;
+    justify-content: baseline !important;
+}
+
+/*Hero Section*/
+
+.hero-section {
+    width: 100% !important;
+    height: 91.8vh !important;
+    background: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.title {
+    font-size: 128px;
+    font-family: 'Cinzel Decorative', cursive;  
+    text-align: center;
+    color: white;
+}
+
+
+.sub-title {
+    text-align: center;
+    font-size: 58px;
+    color: white;
+    font-family: 'Montserrat', serif;
+    font-weight: 100;
+}
+
+.quality {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: 'Montserrat', serif;
+    font-weight: 300;
+}
+
+/*Store*/
+.disc {
+    font-size: 18px;
+}
+
+.text {
+    margin: 75px 0;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+}
+
+
+.image1 {
+    background-image: url('../img/item1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 45%;
+    height: 70vh;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+}
+
+.image2 {
+    background-image: url('../img/item2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 45%;
+    height: 70vh;
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+}
+
+.image3 {
+    background-image: url('../img/item3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 45%;
+    height: 70vh;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+}
+
+.image4 {
+    background-image: url('../img/item4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 45%;
+    height: 70vh;
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+}
+
+.products {
+    position: relative !important; 
+    width: 100% !important;
+    height: 100vh !important;
+}
+
+
+.products-title h2 {
+    font-family: 'Montserrat', serif !important;
+    font-weight: 400;    
+}
+
+.discription-block1 {
+    position: absolute;
+    right: 0;
+    height: 70vh;
+}
+
+.discription-block2 {
+    position: absolute;
+    left: 0;
+    height: 70vh; 
+}
+
+.discription-block3 {
+    position: absolute;
+    right: 0;
+    height: 70vh; 
+}
+
+.discription-block4 {
+    position: absolute;
+    left: 0;
+    height: 70vh; 
+}
+
+.disc {
+    font-family: 'Montserrat', serif !important;
+    font-weight: 400;
+}
+
+.products-title {
+    width: fit-content;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) and (orientation: portrait) {
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+    
+    h1 {
+        font-size: 3em !important;
+    }
+
+    h2 {
+        font-size: 3em !important;
+    }
+
+    h3 {
+        font-size: 2em !important;
+    }
+
+    h4, .offer-title {
+        font-size: 4em !important;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 300px) and (orientation: portrait) {
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .products-title h2::after {
+        content: '';
+        display: block !important;
+        background-color: black;
+        width: auto;
+        height: 2px;
+    }
+}
+
+@media (max-width: 899px) {
+    
+}
